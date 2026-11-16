@@ -1,0 +1,21 @@
+[package]
+name = "ctlu"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.102"
+base64 = "0.22.1"
+bytes = { version = "1.11.1", features = ["serde"] }
+chrono = "0.4.44"
+clap = { version = "4.6.1", features = ["derive"] }
+reqwest = { version = "0.13.3",features = ["json"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+sqlx = { version = "0.9.0", features = ["runtime-tokio", "sqlite", "postgres"] }
+tokio = { version = "1.52.3", features = ["full"] }
+x509-parser = "0.18.1"
+governor = "0.10.1"
+nonzero_ext = "0.3.0"
+futures = "0.3.34"
+sha256 = "1.6.0"
